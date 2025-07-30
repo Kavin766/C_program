@@ -99,3 +99,4 @@ printf("\nElement not present in the list");
 else 
 printf("\nSo Element present in the list"); 
 }
+//hi summa tha oru check....
