@@ -1,5 +1,5 @@
-#include<stdio.h> 
-#include<conio.h> 
+#include<stdio.h>
+#include<stdlib.h>
 #define maxsize 10 
 int list[maxsize],n; 
 void Create(); 
@@ -9,7 +9,7 @@ void Display();
 void Search(); 
 void main() 
 { 
-int choice; 
+int choice;
 do 
 { 
 printf("\n Array Implementation of List\n"); 
@@ -34,10 +34,11 @@ break;
 case 5: Search(); 
 break; 
 case 6: exit(1); 
-} 
-default: printf("\nEnter option between 1 - 6\n"); 
+default: 
+printf("\nEnter option between 1 - 6\n"); 
 break; 
-}while(choice<7); 
+}
+}while(choice<7);
 } 
 void Create() 
 { 
@@ -89,11 +90,12 @@ for(i=0;i<n;i++)
 { 
 if(search == list[i]) 
 { 
-} 
-} 
 count++; 
+printf("key found at location %d",i);
+    } 
+} 
 if(count==0) 
 printf("\nElement not present in the list"); 
 else 
-printf("\nElement present in the list"); 
+printf("\nSo Element present in the list"); 
 }
